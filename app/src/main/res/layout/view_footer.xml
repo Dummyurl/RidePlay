@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:listPreferredItemHeightSmall"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_sports_ticker"
+        />
+
+    <TextView
+        android:id="@+id/tvTwilio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="@dimen/activity_vertical_margin"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvClickForInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_button"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="@string/msg_interested_in_advertising"
+        android:textSize="@dimen/ad_header_text"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/title_registration"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/singup_info"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtName"
+                    style="@style/EditTextForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/redstar"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/hint_field_name"
+                    android:inputType="textPersonName" />
+
+                <View
+                    android:layout_width="@dimen/activity_vertical_margin"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edtLastName"
+                    style="@style/EditTextForm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/redstar"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/hint_field_lastname"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:drawableLeft="@drawable/redstar"
+                android:drawablePadding="5dp"
+                android:hint="@string/hint_field_email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:drawableLeft="@drawable/redstar"
+                android:drawablePadding="5dp"
+                android:hint="@string/hint_field_password"
+                android:inputType="textPassword"
+                android:maxLength="6"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/edtConfirmPassword"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:drawableLeft="@drawable/redstar"
+                android:drawablePadding="5dp"
+                android:hint="@string/hint_field_confirm_password"
+                android:inputType="textPassword"
+                android:maxLength="6"
+                android:typeface="normal" />
+
+            <EditText
+                android:id="@+id/edtMobile"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:drawableLeft="@drawable/redstar"
+                android:drawablePadding="5dp"
+                android:hint="@string/hint_field_mobile"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/edtreferral"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:hint="@string/hint_field_referral_code" />
+
+            <EditText
+                android:id="@+id/edtPayPal"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:hint="@string/hint_field_paypal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/hint_field_how_many_trips"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/color_label" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerTrips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/trips_per_week" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/hint_field_type_of_tablet"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/color_label" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/tabletTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/type_of_tablet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/hint_field_size_of_tablet"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/color_label" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/tabletSizeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/size_of_tablet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/hint_field_state_drive_in"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/color_label" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/citySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/cities" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/hint_field_city_drive_in"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/color_label" />
+
+            <EditText
+                android:id="@+id/edtCity"
+                style="@style/EditTextForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/redstar"
+                android:drawablePadding="5dp"
+                android:hint="@string/hint_field_city" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:drawableLeft="@drawable/redstar"
+                android:drawablePadding="5dp"
+                android:text="@string/hint_field_services_drive_for"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/color_label" />
+
+            <rnf.taxiad.views.CabServicesView
+                android:id="@+id/cabServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </rnf.taxiad.views.CabServicesView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/hint_field_comments"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/color_label" />
+
+            <rnf.taxiad.views.CommentBox
+                android:id="@+id/commentBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+            </rnf.taxiad.views.CommentBox>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/hint_field_interested_in_advertisement"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/color_label" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinnerInterested"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/interested" />
+
+                <View
+                    android:layout_width="@dimen/activity_vertical_margin"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/hint_terms_and_conditions"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/color_label" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/editbox_background_normal"
+                android:fadeScrollbars="false"
+                android:padding="1px"
+                android:scrollbars="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"></WebView>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <TextView
+                android:id="@+id/tvUserTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/user_terms"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/color_label" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/driverTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/driver_terms"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/color_label"
+                app:buttonTint="@color/color_label" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/color_button"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="10dp">
+
+                <ViewAnimator
+                    android:id="@+id/animator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/btnSignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/btn_submit"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/msg_please_wait"
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="@color/color_white" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:indeterminate="true"
+                            android:indeterminateTint="@android:color/white"
+                            android:indeterminateTintMode="src_in" />
+
+                    </LinearLayout>
+                </ViewAnimator>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

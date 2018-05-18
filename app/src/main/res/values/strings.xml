@@ -1,0 +1,125 @@
+<resources>
+
+    <string name="app_name">RIDEPLAY tv</string>
+    <string name="comment_box_length">%s/250</string>
+
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="title_manage_account">Manage Account</string>
+
+    <!-- MESSAGES-->
+    <string name="msg_please_wait">Please wait&#8230;</string>
+    <string name="msg_download_app">Earning pints is easy, download our app or call: 888-fly-southwest</string>
+    <string name="msg_interested_in_advertising">Interested in Advertising? &lt;u&gt;&lt;b&gt;Click Here&lt;/b&gt;&lt;/u&gt; to Text Yourself More Info</string>
+    <!--MESSAGES-->
+
+    <!-- LOGIN SCREEN-->
+    <string name="title_activated_screen">Activated Drivers Log Into RidePlay tv</string>
+    <string name="title_welcome">Welcome</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_passsword">Password</string>
+    <string name="btn_login">Log In</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="btn_send_more_info">Click to Send More Info</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_update">Update</string>
+    <string name="go_to_signup">&lt;u&gt;Sign up for an account&lt;/u&gt;</string>
+    <string name="go_to_forgot_password">&lt;u&gt;Forgot Password?&lt;/u&gt;</string>
+    <!-- LOGIN SCREEN-->
+
+    <!-- SIGNUP SCREEN-->
+    <string name="title_registration">Registration</string>
+    <string name="singup_info">Signup to become partner with us.We will hire those with tablets
+        first and will follow up with the rest.</string>
+    <string name="hint_field_name">First Name</string>
+    <string name="hint_field_lastname">Last Name</string>
+    <string name="hint_field_email">Email Address</string>
+    <string name="hint_field_password">Password</string>
+    <string name="hint_field_confirm_password">Confirm Password</string>
+    <string name="hint_field_mobile">Mobile Number</string>
+    <string name="hint_field_cur_pass">Current Password</string>
+    <string name="hint_field_new_pass">New Password</string>
+    <string name="hint_field_con_pass">Confirm Password</string>
+    <string name="hint_field_referral_code">Referral Code</string>
+    <string name="hint_field_city">City Name</string>
+    <string name="hint_field_paypal">PayPal Id</string>
+    <string name="hint_field_how_many_trips">How Many Trips Do You Make Per Week?</string>
+    <string name="hint_field_type_of_tablet">What type of tablet do you have?</string>
+    <string name="hint_field_size_of_tablet">What size is your tablet?</string>
+    <string name="hint_field_state_drive_in">What state do you drive in?</string>
+    <string name="hint_field_city_drive_in">What city do you drive in?</string>
+    <string name="hint_field_services_drive_for">What Services do you drive for?</string>
+    <string name="hint_field_comments">Comments</string>
+    <string name="hint_field_interested_in_advertisement">Are you interested in help selling advertisement?</string>
+    <string name="hint_enter_phone">Enter Your Phone Number</string>
+    <string name="hint_enter_email">Enter Your E-Mail Id</string>
+    <string name="hint_terms_and_conditions">Please read our driver terms and conditions</string>
+    <!-- SIGNUP SCREEN-->
+
+    <!-- CAB SERVICES-->
+    <string name="cab_uber">Uber</string>
+    <string name="cab_lyft">Lyft</string>
+    <string name="cab_pedicab">Pedicab</string>
+    <string name="cab_carma">Carma</string>
+    <string name="cab_other">Other</string>
+    <!-- CAB SERVICES-->
+
+    <!--Menu Items-->
+    <string name="item_home">Home</string>
+    <string name="item_manage_accounts">Manage Account</string>
+    <string name="item_download">Download</string>
+    <string name="item_logout">Logout</string>
+    <!--Menu Items-->
+
+    <!--Buttons-->
+    <string name="btn_go_to_login">Go to login</string>
+    <string name="btn_cancel">Cancel</string>
+    <!--Buttons-->
+
+    <!--Validations-->
+    <string name="validate_name">Please enter a name.</string>
+    <string name="validate_last_name">Please enter a last name.</string>
+    <string name="validate_mobile">Please enter a valid mobile.</string>
+    <string name="validate_referral_code">Please enter a referral code.</string>
+    <string name="validate_paypal_id">Please enter a paypal id.</string>
+    <string name="validate_username">Please enter a username.</string>
+    <string name="validate_password">Please enter a password.</string>
+    <string name="validate_confirm_password">Password and Confirm Password do not match.</string>
+    <string name="validate_email">Please enter a valid email address.</string>
+    <string name="validate_cab_service">Please select a cab service.</string>
+    <string name="validate_phone">Please enter a valid phone number.</string>
+    <string name="validate_city">Please enter a valid city.</string>
+
+    <string name="validate_old_pass">Please enter a current password.</string>
+    <string name="validate_new_pass">Please enter a new password.</string>
+    <string name="validate_con_pass">Please enter confirm password.</string>
+    <string name="validate_match_pass">Password not matched.</string>
+    <!--Validations-->
+
+    <!--Volley Errors!-->
+    <string name="auth_failure_error">There was some problem with server authentication.Please try again later.</string>
+    <string name="network_error">It seems there was network connectivity loss.Please try again later.</string>
+    <string name="no_connection_error">Please check your internet connectivity and try again.</string>
+    <string name="parse_error">There was some problem with server response.Please try again later.</string>
+    <string name="server_error">It seems there was some server error.Please try again later</string>
+    <string name="timeout_error">It is taking too much time for this request.Please check your internet connectivity and try again.</string>
+    <string name="unknown_error">Unknown error occurred.Please try again later.</string>
+    <!--Volley Errors!-->
+
+    <!--Explicit Download Notification!-->
+    <string name="notification_ticker">You are not connected to WIFI, would you like to continue downloading using Data Pack?</string>
+    <string name="notification_title">@string/app_name</string>
+    <string name="notification_subject">You are not connected to WIFI, would you like to continue downloading using Data Pack?</string>
+    <!--Explicit Download Notification!-->
+
+
+    <string name="evp_submit">SUBMIT</string>
+    <string name="evp_retry">RETRY</string>
+    <string name="user_terms">I agree to the user agreement terms.</string>
+    <string name="driver_terms">I agree to RIDEPLAY tv driver terms.</string>
+
+    <string name="text_feature_click"><u>Click</u></string>
+    <string name="click_here">CLICK HERE</string>
+    <string name="btn_ok">Ok</string>
+
+
+</resources>

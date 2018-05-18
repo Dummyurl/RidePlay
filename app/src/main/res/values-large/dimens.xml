@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="evp_content_inset">24dp</dimen>
+    <dimen name="evp_content_inset_half">12dp</dimen>
+    <dimen name="evp_content_inset_less">10dp</dimen>
+    <dimen name="evp_content_inset_iconbuttons">6dp</dimen>
+
+    <dimen name="evp_text_size_small">14sp</dimen>
+
+    <dimen name="evp_button_size">56dp</dimen>
+    <dimen name="evp_text_size_medium">17sp</dimen>
+
+    <dimen name="evp_negative_inset_large">-8dp</dimen>
+    <dimen name="evp_negative_inset_small">-2dp</dimen>
+    <dimen name="ad_header_text">25sp</dimen>
+
+    <dimen name="small_text">18sp</dimen>
+    <dimen name="medium_text">20sp</dimen>
+    <dimen name="extra_medium_text">22sp</dimen>
+    <dimen name="large_text">22sp</dimen>
+    <dimen name="very_large_text">25sp</dimen>
+    <dimen name="offer_click_margin">80dp</dimen>
+    <dimen name="ad_offer_texr">21sp</dimen>
+
+</resources>

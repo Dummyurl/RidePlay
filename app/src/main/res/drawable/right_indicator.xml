@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/ic_next_frame1"
+        android:duration="@android:integer/config_shortAnimTime" />
+    <item
+        android:drawable="@drawable/ic_next_frame2"
+        android:duration="@android:integer/config_shortAnimTime" />
+    <item
+        android:drawable="@drawable/ic_next_frame3"
+        android:duration="@android:integer/config_shortAnimTime" />
+    <item
+        android:drawable="@drawable/ic_next_frame4"
+        android:duration="@android:integer/config_shortAnimTime" />
+
+</animation-list>

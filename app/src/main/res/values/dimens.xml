@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin_add">20dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dip</dimen>
+    <dimen name="form_horizontal_margin">90dp</dimen>
+    <dimen name="progressbar_width">80dp</dimen>
+    <dimen name="progressbar_height">80dp</dimen>
+    <dimen name="progressbar_margin_bottom">15dp</dimen>
+    <dimen name="arc_bottom_text_size">8sp</dimen>
+    <dimen name="arc_text_size">22sp</dimen>
+    <dimen name="arc_suffix_text_size">12sp</dimen>
+
+    <dimen name="evp_content_inset">16dp</dimen>
+    <dimen name="evp_content_inset_half">8dp</dimen>
+    <dimen name="evp_content_inset_less">1dp</dimen>
+    <dimen name="evp_content_inset_iconbuttons">2dp</dimen>
+
+    <dimen name="evp_text_size_small">10sp</dimen>
+
+    <dimen name="evp_button_size">48dp</dimen>
+    <dimen name="evp_text_size_medium">14sp</dimen>
+
+    <dimen name="evp_negative_inset_large">-8dp</dimen>
+    <dimen name="evp_negative_inset_small">-2dp</dimen>
+    <dimen name="ad_header_text">18sp</dimen>
+
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="medium_text">16sp</dimen>
+    <dimen name="extra_medium_text">17sp</dimen>
+    <dimen name="large_text">20sp</dimen>
+    <dimen name="very_large_text">23sp</dimen>
+    <dimen name="offer_click_margin">80dp</dimen>
+    <dimen name="ad_offer_texr">14sp</dimen>
+</resources>

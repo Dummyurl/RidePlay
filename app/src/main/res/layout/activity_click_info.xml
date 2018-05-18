@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rnf.taxiad.views.TimerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/timerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:orientation="vertical"-->
+        <!--app:backgroundImage="@drawable/splashscreen_background"-->
+        <!--app:viewAspectRatio="1">-->
+
+    <!--</com.facebook.drawee.view.SimpleDraweeView>-->
+
+    <include layout="@layout/view_click_info_form" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/btnBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:backgroundImage="@drawable/circle_red"
+        app:placeholderImage="@mipmap/ic_back" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/btnFake"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/btnFake"
+        android:layout_toRightOf="@id/btnBack"
+        android:background="@android:color/transparent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Earning points is easy, download our app or call: 888-RIDEPLAY"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/large_text"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</rnf.taxiad.views.TimerLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="form_horizontal_margin">130dp</dimen>
+    <dimen name="navigation_drawer_width">300dip</dimen>
+    <dimen name="progressbar_width">100dp</dimen>
+    <dimen name="progressbar_height">100dp</dimen>
+    <dimen name="progressbar_margin_bottom">30dp</dimen>
+    <dimen name="arc_bottom_text_size">14sp</dimen>
+    <dimen name="arc_text_size">28sp</dimen>
+    <dimen name="arc_suffix_text_size">16sp</dimen>
+    <dimen name="ad_header_text">30sp</dimen>
+
+    <dimen name="small_text">18sp</dimen>
+    <dimen name="medium_text">22sp</dimen>
+    <dimen name="extra_medium_text">24sp</dimen>
+    <dimen name="large_text">28sp</dimen>
+    <dimen name="very_large_text">32sp</dimen>
+    <dimen name="offer_click_margin">95dp</dimen>
+    <dimen name="ad_offer_texr">24sp</dimen>
+</resources>

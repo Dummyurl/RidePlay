@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/editbox_background_normal">
+
+    <EditText
+        android:id="@+id/edtComments"
+        style="@style/EditTextForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="left|top"
+        android:lines="6"
+        android:maxLength="250"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/tvComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edtComments"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="0/250"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/color_label" />
+
+</RelativeLayout>
+

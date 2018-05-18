@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/topDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/topDivider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_button"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="View Demo"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCheckOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDemo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_button"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Send Checkout"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/bottomdivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvCheckOut"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/bottomdivider" />
+
+
+    <ViewAnimator
+        android:id="@+id/refreshanimator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/evp_button_size"
+            android:layout_height="@dimen/evp_button_size"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle_red">
+
+            <ImageView
+                android:id="@+id/btnRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="3dp"
+                android:src="@mipmap/referesh" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_button"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/msg_please_wait"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/evp_text_size_small" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white"
+                android:indeterminateTintMode="src_in" />
+
+        </LinearLayout>
+
+
+    </ViewAnimator>
+
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/arc_progress"
+            android:layout_width="@dimen/progressbar_width"
+            android:layout_height="@dimen/progressbar_width"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            custom:donut_finished_color="@color/color_button"
+            custom:donut_finished_stroke_width="5dp"
+            custom:donut_text_color="@android:color/black"
+            custom:donut_unfinished_color="@color/color_label"
+            custom:donut_unfinished_stroke_width="5dp" />
+
+        <TextView
+            android:id="@+id/tvBytes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="0 MB"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lastDownloadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refreshanimator"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Last download:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvDownloadDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+</RelativeLayout>

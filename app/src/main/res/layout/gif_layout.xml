@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<WebView-->
+    <!--android:id="@+id/gifDraweeView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:viewAspectRatio="1" />
+
+    <TextView
+        android:id="@+id/tvContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/white_rounded_corner"
+        android:elevation="5dp"
+        android:padding="8dp"
+        android:text="Continue"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/ad_offer_texr"
+        android:textStyle="bold" />
+
+</FrameLayout>

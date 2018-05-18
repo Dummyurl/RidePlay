@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:listPreferredItemHeightSmall"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkboxUber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/cab_uber"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            app:buttonTint="@color/color_label" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkboxCarma"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/cab_carma"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            app:buttonTint="@color/color_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:listPreferredItemHeightSmall"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkboxLyft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/cab_lyft"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            app:buttonTint="@color/color_label" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/checkboxOther"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/cab_other"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            app:buttonTint="@color/color_label" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkboxPedicab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="@string/cab_pedicab"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        app:buttonTint="@color/color_label" />
+
+</LinearLayout>
+
